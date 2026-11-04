@@ -13,7 +13,10 @@
         "arguments": {
           "targetDate": "2027-03-13"
         },
-        "writeResultTo": "/data/countdown"
+        "writeResultTo": "/data/countdown",
+        "candidateOutputFields": [
+          "/countdownDays"
+        ]
       }
     ],
     "candidateEventCandidates": [],

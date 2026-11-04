@@ -14,7 +14,12 @@
           "forecastDays": 1,
           "prefectureName": "东莞市"
         },
-        "writeResultTo": "/data/weather"
+        "writeResultTo": "/data/weather",
+        "candidateOutputFields": [
+          "/current/airQuality",
+          "/current/condition",
+          "/current/temperatureText"
+        ]
       }
     ],
     "candidateEventCandidates": [

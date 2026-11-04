@@ -10,19 +10,36 @@
     "candidateDataBindings": [
       {
         "capabilityId": "GetCurrentTime",
-        "writeResultTo": "/data/currentTime"
+        "writeResultTo": "/data/currentTime",
+        "candidateOutputFields": [
+          "/currentDate",
+          "/dayOfWeek"
+        ]
       },
       {
         "capabilityId": "GetPhoneBatteryInfo",
-        "writeResultTo": "/data/phoneBattery"
+        "writeResultTo": "/data/phoneBattery",
+        "candidateOutputFields": [
+          "/batterySOCText",
+          "/chargingStatusDesc"
+        ]
       },
       {
         "capabilityId": "GetCalendarEvents",
-        "writeResultTo": "/data/calendar"
+        "writeResultTo": "/data/calendar",
+        "candidateOutputFields": [
+          "/events/0/dtStart",
+          "/events/0/eventLocation",
+          "/events/0/title"
+        ]
       },
       {
         "capabilityId": "GetMemoData",
-        "writeResultTo": "/data/memo"
+        "writeResultTo": "/data/memo",
+        "candidateOutputFields": [
+          "/todoPendingCount",
+          "/todoTotalCount"
+        ]
       }
     ],
     "candidateEventCandidates": [],

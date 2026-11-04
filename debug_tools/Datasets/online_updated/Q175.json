@@ -14,7 +14,14 @@
           "forecastDays": 1,
           "prefectureName": "杭州市"
         },
-        "writeResultTo": "/data/weather"
+        "writeResultTo": "/data/weather",
+        "candidateOutputFields": [
+          "/current/condition",
+          "/current/temperatureText",
+          "/current/uvIndex",
+          "/daily/0/rainProbabilityPercent",
+          "/location/cityCode"
+        ]
       }
     ],
     "candidateEventCandidates": [

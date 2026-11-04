@@ -10,11 +10,21 @@
     "candidateDataBindings": [
       {
         "capabilityId": "GetCurrentTime",
-        "writeResultTo": "/data/currentTime"
+        "writeResultTo": "/data/currentTime",
+        "candidateOutputFields": [
+          "/currentDate",
+          "/dayOfWeek",
+          "/lunarDate"
+        ]
       },
       {
         "capabilityId": "ViewWeather",
-        "writeResultTo": "/data/weather"
+        "writeResultTo": "/data/weather",
+        "candidateOutputFields": [
+          "/current/condition",
+          "/current/temperatureText",
+          "/location/cityCode"
+        ]
       }
     ],
     "candidateEventCandidates": [
