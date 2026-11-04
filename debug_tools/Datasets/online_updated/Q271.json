@@ -9,7 +9,8 @@
     "romVersion": "CMM-AL10P 7.0.0.111",
     "candidateDataBindings": [
       {
-        "capabilityId": "GetCurrentTime"
+        "capabilityId": "GetCurrentTime",
+        "writeResultTo": "/data/currentTime"
       },
       {
         "capabilityId": "ViewWeather",
@@ -18,7 +19,16 @@
     ],
     "candidateEventCandidates": [
       {
-        "capabilityId": "event.open.weather"
+        "capabilityId": "event.open.weather",
+        "action": {
+          "call": "clickToDeeplink",
+          "args": {
+            "intentName": "Weather_CityCode",
+            "bundleName": "",
+            "abilityName": "",
+            "uri": "{{ 'hww://www.huawei.com/totemweather?enterType=share&cityCode=' + ${/data/weather/location/cityCode} }}"
+          }
+        }
       }
     ],
     "candidateAssetIds": []

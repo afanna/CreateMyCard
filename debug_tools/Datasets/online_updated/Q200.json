@@ -9,7 +9,8 @@
     "romVersion": "CMS-AL20 7.0.0.111",
     "candidateDataBindings": [
       {
-        "capabilityId": "GetCurrentTime"
+        "capabilityId": "GetCurrentTime",
+        "writeResultTo": "/data/currentTime"
       },
       {
         "capabilityId": "GetPhoneBatteryInfo",
@@ -20,7 +21,8 @@
         "writeResultTo": "/data/calendar"
       },
       {
-        "capabilityId": "GetMemoData"
+        "capabilityId": "GetMemoData",
+        "writeResultTo": "/data/memo"
       }
     ],
     "candidateEventCandidates": [],
